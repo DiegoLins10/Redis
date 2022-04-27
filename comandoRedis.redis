@@ -19,3 +19,6 @@ lpush minhalista 'marte' -- 4
 
 -- mostra elementos da lista do 0 ao 4
 lrange minhalista 0 4
+
+-- mostra o tamanho da lista
+llen minhalista
