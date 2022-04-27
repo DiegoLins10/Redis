@@ -20,8 +20,20 @@ lpush minhalista 'marte' -- 4
 -- mostra elementos da lista do 0 ao 4
 lrange minhalista 0 4
 
+-- mostra tudo
+lrange minhalista 0 -1
+
 -- mostra o tamanho da lista
 llen minhalista
 
 -- adiciona a direita
 rpush minhalista 'doce'
+
+-- troca o elemento 1 da esquerda para a direita
+lset minhalista 1 'venus'
+
+--print
+echo 'doce'
+
+-- pega a segunda posicao contando pela esquerda
+lindex minhalista 2
