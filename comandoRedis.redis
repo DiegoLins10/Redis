@@ -22,3 +22,6 @@ lrange minhalista 0 4
 
 -- mostra o tamanho da lista
 llen minhalista
+
+-- adiciona a direita
+rpush minhalista 'doce'
