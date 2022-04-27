@@ -8,3 +8,14 @@ keys *
 
 pega a chave nom e emostra "wesley"
 get nome
+
+
+-- criando lista chamada minhalista e inserindio valores nela
+lpush minhalista 'mundo' -- 0
+lpush minhalista 'carro' -- 1
+lpush minhalista 'bala' -- 2
+lpush minhalista 'terra' -- 3
+lpush minhalista 'marte' -- 4
+
+-- mostra elementos da lista do 0 ao 4
+lrange minhalista 0 4
