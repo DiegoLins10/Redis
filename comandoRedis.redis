@@ -1,0 +1,10 @@
+-- cria chave/valor
+set nome "wesley"
+set nome2 "diego"
+set nome3 "vinicius"
+
+-- pega todas as chaves
+keys *
+
+pega a chave nom e emostra "wesley"
+get nome
