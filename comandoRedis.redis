@@ -37,3 +37,21 @@ echo 'doce'
 
 -- pega a segunda posicao contando pela esquerda
 lindex minhalista 2
+
+
+hset poet:Aluno1 nome Service nota 10 sala 12 curso "Analise e desenvolvimento"
+hset poet:Aluno2 nome Wesley nota 8  sala 13 curso "Analise e desenvolvimento"
+hset poet:Aluno3 nome Vinicius nota 10  sala 10 curso "Analise e desenvolvimento"
+hset poet:Aluno4 nome Service nota 10 sala 11 curso "Analise e desenvolvimento"
+hset poet:Aluno5 nome Newton nota 7 sala 11 curso "Analise e desenvolvimento"
+
+echo "---------------------"
+hgetall poet:Aluno1 
+echo "---------------------"
+hgetall poet:Aluno2
+echo "-------- -------------"
+hgetall poet:Aluno3
+echo "----------------------------"
+hgetall poet:Aluno4 
+echo "------------------------------"
+hgetall poet:Aluno5 
