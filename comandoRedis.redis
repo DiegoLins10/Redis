@@ -93,3 +93,19 @@ RDB, AOF e ambas
 
 
 HMGET -- RETORNA VARIOS VALORES DE UM HASH
+
+SREM -- REMOVE VARIOS VALORES DE UM CONJUNTO ASSOCIADO
+
+
+LPUSH dragao "saphira" ADICIONA AO FINAL DA LISTA
+
+
+The FLUSHDB command deletes the keys in a database. 
+And the FLUSHALL command deletes all keys in all databases.
+
+SUBSCRIBE <channel> e PUBLISH <channel> <message> -- NOTIFICATIONS
+
+
+Observando o Redis e o MongoDb, cite algumas características de cada um, compare suas vantagens e duas aplicações para cada um?
+MongoDB é mais recomendado para o uso de muitos dados por seu baixo custo e fácil manipulação 
+e o Redis sua principal característica é a agilidade com que acessa e armazena informações.
