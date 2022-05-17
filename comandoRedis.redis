@@ -90,3 +90,6 @@ GETSET -- ATUALIZA O VALOR E RETORNA O ANTIGO
 
 O Redis possui três formas de persistir seus dados, que são:
 RDB, AOF e ambas
+
+
+HMGET -- RETORNA VARIOS VALORES DE UM HASH
