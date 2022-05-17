@@ -70,3 +70,23 @@ remove sorted set: ZREM
 SETBIT acesso:01/01/2021 10 1  //0
 
 GETBIT acesso:01/01/2021 10 // retorna 1
+
+
+sdiff presidents kings beatles -- retorna a diferenca entre os conjuntos
+
+
+smove -- move um elemento para outro conjunto
+
+
+
+HLEN -- INFORMA O TAMANHO 
+
+
+zadd -- cria um conjunto ordenado, sorted
+
+
+
+GETSET -- ATUALIZA O VALOR E RETORNA O ANTIGO
+
+O Redis possui três formas de persistir seus dados, que são:
+RDB, AOF e ambas
