@@ -55,3 +55,18 @@ echo "----------------------------"
 hgetall poet:Aluno4 
 echo "------------------------------"
 hgetall poet:Aluno5 
+
+
+----------- sorted set -------------------
+
+
+remove sorted set: ZREM
+
+
+
+
+------------- GET BIT E SET BIT -----------
+
+SETBIT acesso:01/01/2021 10 1  //0
+
+GETBIT acesso:01/01/2021 10 // retorna 1
