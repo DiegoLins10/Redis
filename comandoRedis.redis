@@ -109,3 +109,19 @@ SUBSCRIBE <channel> e PUBLISH <channel> <message> -- NOTIFICATIONS
 Observando o Redis e o MongoDb, cite algumas características de cada um, compare suas vantagens e duas aplicações para cada um?
 MongoDB é mais recomendado para o uso de muitos dados por seu baixo custo e fácil manipulação 
 e o Redis sua principal característica é a agilidade com que acessa e armazena informações.
+
+
+lrem minhalista 0 "olá" -- remove todas as ocrrencia de olá na minhalista
+
+
+
+rpush dragon saphira
+rpush dragon d
+rpush dragon s
+
+lpop dragon
+
+lpop dragon
+
+echo -----------------
+LRANGE dragon 0 -1 // retorna s
