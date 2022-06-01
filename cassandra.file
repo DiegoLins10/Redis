@@ -1,0 +1,68 @@
+CREATE KEYSPACE IF NOT EXISTS "EmpresaEngenharia"
+WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
+
+
+CREATE TYPE EmpresaEngenharia.funcionario (
+    Id_func int,
+    Nome_Func text,
+    Cargo text,
+    VL_Hora double);
+
+
+
+CREATE TABLE "EmpresaEngenharia"."Projeto" (
+projeto_id uuid,
+NR_PROJ int
+NOME_PROJ text,
+LOCAL_PROJ text,
+FUNCIONARIOS FROZEN<funcionario>
+
+PRIMARY KEY(projeto_id)
+);
+
+
+INSERT INTO "EmpresaEngenharia"."Projeto" (NR_PROJ, NOME_PROJ, LOCAL_PROJ, FUNCIONARIOS) VALUES (
+  001,
+  Alfa,
+  São paulo,
+  { Id_func: 101, Nome_Func: 'Antonio Alves', Cargo: 'Analista Pleno', VL_Hora: 35.00 }
+);
+
+INSERT INTO "EmpresaEngenharia"."Projeto" (NR_PROJ, NOME_PROJ, LOCAL_PROJ, FUNCIONARIOS) VALUES (
+  001,
+  Alfa,
+  São paulo,
+  { Id_func: 102, Nome_Func: 'Beatriz Bernardes', Cargo: 'Analista Pleno', VL_Hora: 35.00 }
+);
+
+INSERT INTO "EmpresaEngenharia"."Projeto" (NR_PROJ, NOME_PROJ, LOCAL_PROJ, FUNCIONARIOS) VALUES (
+  001,
+  Alfa,
+  São paulo,
+  { Id_func: 103, Nome_Func: 'Claudio Cardoso', Cargo: 'Analista Senior', VL_Hora: 50.00 }
+);
+
+
+
+
+INSERT INTO "EmpresaEngenharia"."Projeto" (NR_PROJ, NOME_PROJ, LOCAL_PROJ, FUNCIONARIOS) VALUES (
+  002,
+  Beta,
+  Jundiaí,
+  { Id_func: 102, Nome_Func: 'Beatriz Bernardes', Cargo: 'Analista Pleno', VL_Hora: 35.00 }
+);
+
+
+INSERT INTO "EmpresaEngenharia"."Projeto" (NR_PROJ, NOME_PROJ, LOCAL_PROJ, FUNCIONARIOS) VALUES (
+  002,
+  Beta,
+  Jundiaí,
+  { Id_func: 103, Nome_Func: 'Claudio Cardoso', Cargo: 'Analista Senior', VL_Hora: 35.00 }
+);
+
+INSERT INTO "EmpresaEngenharia"."Projeto" (NR_PROJ, NOME_PROJ, LOCAL_PROJ, FUNCIONARIOS) VALUES (
+  002,
+  Beta,
+  Jundiaí,
+  { Id_func: 103, Nome_Func: 'Daniela Dantas', Cargo: 'Analista Senior', VL_Hora: 50.00 }
+);
